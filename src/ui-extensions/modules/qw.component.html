@@ -1,0 +1,9 @@
+<!-- <h1>{{ greeting }}</h1> -->
+
+<div class="qw-container" *ngFor="let item of productReviews.items">
+    <a [routerLink]="'/extensions/qw-ui/id'">{{ item.authorName  }}</a>
+    <img [src]="item.product.featuredAsset.preview" style="width: 80px; height: 80px;">
+    <div>{{ item.rating }}</div>
+    <div>{{ item.summary }}</div>
+    <div>{{ item.status }}</div>
+</div>

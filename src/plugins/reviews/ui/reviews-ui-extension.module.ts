@@ -26,6 +26,7 @@ import { RelationReviewInputComponent } from './components/featured-review-selec
                 icon: 'star',
             },
             'marketing',
+            'promotions',
         ),
         registerDashboardWidget('reviews', {
             title: 'Latest reviews',

@@ -18,6 +18,19 @@ export function customAdminUi(options: { recompile: boolean; devMode: boolean })
         return compileUiExtensions({
             outputPath: compiledAppPath,
             extensions: [ReviewsPlugin.uiExtensions, nonAngularUiExtensions],
+            // extensions: [
+            //     {
+            //         extensionPath: path.join(__dirname, 'ui-extensions'),
+            //         ngModules: [
+            //             {
+            //                 type: 'lazy',
+            //                 route: 'greet',
+            //                 ngModuleFileName: 'greeter.module.ts',
+            //                 ngModuleName: 'GreeterModule',
+            //             },
+            //         ],
+            //     },
+            // ],
             devMode: options.devMode,
         });
     } else {

@@ -21,7 +21,8 @@
         "tabWidth": 4,
         "trailingComma": "all",
         "printWidth": 110,
-        "arrowParens": "avoid"
+        "arrowParens": "avoid",
+        "endOfLine": "auto"
       }
     ],
     "@typescript-eslint/no-use-before-define": "off",

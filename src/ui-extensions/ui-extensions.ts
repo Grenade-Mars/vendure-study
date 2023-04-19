@@ -21,6 +21,12 @@ export const nonAngularUiExtensions: AdminUiExtension = {
             ngModuleName: 'VueUiExtensionModule',
         },
         {
+            type: 'lazy',
+            route: 'qw-ui',
+            ngModuleFileName: 'qw-ui-extension.module.ts',
+            ngModuleName: 'QwUiExtensionModule',
+        },
+        {
             type: 'shared',
             ngModuleFileName: 'shared-ui-extension.module.ts',
             ngModuleName: 'UiSharedModule',

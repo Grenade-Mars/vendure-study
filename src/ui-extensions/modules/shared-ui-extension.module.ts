@@ -22,8 +22,15 @@ import { addNavMenuSection } from '@vendure/admin-ui/core';
                     routerLink: ['/extensions/react-ui'],
                     icon: 'code',
                 },
+                {
+                    id: 'qw-app',
+                    label: 'Qw App',
+                    routerLink: ['/extensions/qw-ui'],
+                    icon: 'code',
+                },
             ],
-        }),
+        },
+        'system'),
     ],
 })
 export class UiSharedModule {}
