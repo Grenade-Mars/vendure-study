@@ -5,10 +5,10 @@
   "scripts": {
     "populate": "ts-node populate.ts",
     "compile-admin-ui": "ts-node src/compile-admin-ui.ts",
-    "run:server": "ts-node ./src/index.ts",
+    "run:server": "SET NODE_OPTIONS=--openssl-legacy-provider && ts-node ./src/index.ts",
     "run:worker": "ts-node ./src/index-worker.ts",
     "start": "concurrently yarn:run:*",
-    "build": "rimraf dist && rimraf admin-ui && tsc && tsc -p tsconfig.migrations.json && yarn compile-admin-ui",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && rimraf dist && rimraf admin-ui && tsc && tsc -p tsconfig.migrations.json && yarn compile-admin-ui",
     "generate-types": "graphql-codegen --config ./codegen.json",
     "migration:generate": "ts-node migration generate",
     "migration:run": "ts-node migration run",
